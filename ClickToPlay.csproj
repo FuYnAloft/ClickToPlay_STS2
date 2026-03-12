@@ -90,6 +90,7 @@
 
     <ItemGroup>
       <Content Include=".memory.md" />
+      <Content Include="README.md" />
     </ItemGroup>
 
     <Target Name="CopyToModsFolderOnBuild" AfterTargets="PostBuildEvent">
