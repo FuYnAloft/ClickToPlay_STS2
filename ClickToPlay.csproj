@@ -88,6 +88,10 @@
         </PackageReference>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include=".memory.md" />
+    </ItemGroup>
+
     <Target Name="CopyToModsFolderOnBuild" AfterTargets="PostBuildEvent">
         <Message Text="Copying .dll to mods folder." Importance="high"/>
         <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(Sts2Path)/mods/$(MSBuildProjectName)/"/>
