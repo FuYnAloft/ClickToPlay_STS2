@@ -36,7 +36,7 @@ public static class NPlayerHandPatch
         if (card.CombatState == null)
             return false;
 
-        CombatState combatState = card.CombatState;
+        ICombatState combatState = card.CombatState;
         TargetType targetType = card.TargetType;
 
         switch (targetType)
